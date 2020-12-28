@@ -10,6 +10,10 @@
   "search.exclude": {
     "**/venv": true
   },
+  "python.sortImports.args": [
+    "-rc",
+    "--atomic"
+  ],
   "python.linting.enabled": true,
   "[python]": {
     "editor.tabSize": 4,

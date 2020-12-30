@@ -54,3 +54,4 @@ def solve(numbers):
 with open(os.path.join(script_dir, "in.txt"), "r") as reader:
     numbers = [int(x) for x in reader.read().splitlines()]
     print(solve(numbers))
+    print(solve_simpler(numbers))

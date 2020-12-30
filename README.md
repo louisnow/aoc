@@ -4,6 +4,8 @@ See https://adventofcode.com/
 
 ## Running
 
+The code has no external dependencies so it will work without having to install additional libraries. The `requirements.txt` contains linting and formatting dependencies.
+
 Format
 
 `python3 <year>/<day>/<day>-<part>.py`

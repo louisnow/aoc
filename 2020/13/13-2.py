@@ -1,6 +1,4 @@
 import os
-import re
-import math
 
 script_dir = os.path.dirname(__file__)
 

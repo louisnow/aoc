@@ -2,19 +2,20 @@ import os
 
 script_dir = os.path.dirname(__file__)
 
+# clockwise from top
+moves = [
+    lambda i, j, jump: [i - jump, j],
+    lambda i, j, jump: [i - jump, j + jump],
+    lambda i, j, jump: [i, j + jump],
+    lambda i, j, jump: [i + jump, j + jump],
+    lambda i, j, jump: [i + jump, j],
+    lambda i, j, jump: [i + jump, j - jump],
+    lambda i, j, jump: [i, j - jump],
+    lambda i, j, jump: [i - jump, j - jump],
+]
+
 
 def count_visible_occupied(area, i, j):
-    # clockwise from top
-    moves = [
-        lambda x, y, jump: [i - jump, j],
-        lambda x, y, jump: [i - jump, j + jump],
-        lambda x, y, jump: [i, j + jump],
-        lambda x, y, jump: [i + jump, j + jump],
-        lambda x, y, jump: [i + jump, j],
-        lambda x, y, jump: [i + jump, j - jump],
-        lambda x, y, jump: [i, j - jump],
-        lambda x, y, jump: [i - jump, j - jump],
-    ]
     rows = len(area)
     cols = len(area[0])
     count = 0

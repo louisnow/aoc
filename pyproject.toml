@@ -1,0 +1,15 @@
+[project]
+name = "aoc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+[dependency-groups]
+dev = [
+    "mypy>=1.14.0",
+    "mypy-extensions>=1.0.0",
+    "ruff>=0.8.4",
+    "typing-extensions>=4.12.2",
+]

@@ -2,6 +2,7 @@ import os
 
 script_dir = os.path.dirname(__file__)
 
+
 #
 # My goal was to reduce it to O(n) excluding the sorting step
 #

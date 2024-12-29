@@ -2,6 +2,7 @@ import os
 
 script_dir = os.path.dirname(__file__)
 
+
 # prefer euclids instead of a brute force
 # works since our modulo inputs are small
 def get_inverse(n, modulo):

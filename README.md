@@ -21,11 +21,13 @@ If VS Code is your editor
 - Copy `.vscode/settings.json.default` to `.vscode/settings.json`
 
 - Create a local python environment and install dependencies for linting and autoformatting
+- The project uses [uv](https://docs.astral.sh/uv/getting-started/installation/) for package management and versioning 
 
 ```
-python3 -m venv venv
-source venv/bin/activate
-pip3 install -r requirements.txt
+uv venv --python 3.13
+source .venv/bin/activate
+uv sync
+
 ```
 
 If you want to use an editor of your choice, I use [black](https://github.com/psf/black) for formatting and [mypy](https://github.com/python/mypy) for linting
